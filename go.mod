@@ -2,6 +2,8 @@ module github.com/vancluever/terraform-provider-acme/v2
 
 go 1.15
 
+replace github.com/go-acme/lego/v4 => ../../go-acme/lego
+
 require (
 	github.com/Azure/azure-sdk-for-go v45.0.0+incompatible // indirect
 	github.com/BurntSushi/toml v1.1.0
@@ -15,6 +17,5 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/rainycape/memcache v0.0.0-20150622160815-1031fa0ce2f2
-	google.golang.org/api v0.34.0 // indirect
 	software.sslmate.com/src/go-pkcs12 v0.0.0-20210415151418-c5206de65a78
 )
